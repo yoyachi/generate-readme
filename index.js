@@ -4,7 +4,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require('util');
 
-const api = require('./utils/api.js');
+// const api = require('./utils/api.js');
 const generateMarkdown = require("./utils/generateMarkdown.js");
 // TODO: Create an array of questions for user input
 
@@ -17,7 +17,7 @@ const questions = [
 
 
 // Inquirer prompts for userResponses
-const prompUser = [
+let userResponses = [
     {
         type: 'input',
         message: questions[0] + "(Required)",
@@ -38,7 +38,7 @@ const prompUser = [
     {
         type: 'input',
         message: questions[1] + "(Required)",
-        name: 'e-mail',
+        name: 'email',
         validate: NameInput => {
             if (NameInput) {
                 return true;
@@ -54,7 +54,7 @@ const prompUser = [
     {
         type: 'input',
         message: questions[2] + "(Required)",
-        name: 'project-name',
+        name: 'projectName',
         validate: NameInput => {
             if (NameInput) {
                 return true;
@@ -70,7 +70,7 @@ const prompUser = [
     {
         type: 'input',
         message: questions[3] + "(Required)",
-        name: 'license-kind',
+        name: 'licenseKind',
         validate: NameInput => {
             if (NameInput) {
                 return true;
@@ -86,7 +86,7 @@ const prompUser = [
     {
         type: 'input',
         message: questions[4] + "(Required)",
-        name: 'command-dependencies',
+        name: 'commandDependencies',
         validate: NameInput => {
             if (NameInput) {
                 return true;
@@ -102,7 +102,7 @@ const prompUser = [
     {
         type: 'input',
         message: questions[5] + "(Required)",
-        name: 'command-test',
+        name: 'commandTest',
         validate: NameInput => {
             if (NameInput) {
                 return true;
@@ -119,7 +119,7 @@ const prompUser = [
     {
         type: 'input',
         message: questions[6] + "(Required)",
-        name: 'project-description',
+        name: 'projectDescription',
         validate: NameInput => {
             if (NameInput) {
                 return true;
@@ -155,24 +155,21 @@ const writeFileAsync = util.promisify(writeToFile);
 
 // TODO: Create a function to initialize app
 async function init() {
-try {
-    const userResponses = await inquirer.prompt(questions);
+     userResponses = await inquirer.prompt(userResponses);
+    console.log("Your responses: ", userResponses);
     console.log("Thank you for your responses! ");
 
-    const userInfo = await api.getUser(userResponses);
-    console.log("Your GitHub user info: ", userInfo);
+    // const userInfo = await api.getUser(userResponses);
+    // console.log("Your GitHub user info: ", userInfo);
 
     console.log("Generating yor README")
-    const markdown = generateMarkdown (userResponses, userInfo);
+    const markdown = generateMarkdown (userResponses);
     console.log(markdown);
 
-    await writeFileAsync('ExampleREADME.md', markdown);
+    await writeFileAsync('ExampleREADME.md', markdown)
 
-   
-} catch (error) {
-    console.log(error);
-}   
-};
+   //false.w 
+}
 
 // Function call to initialize app
 init();
