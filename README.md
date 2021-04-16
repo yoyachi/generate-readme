@@ -24,11 +24,15 @@
   
   ## Usage 
   
+  ### Screenshot
+  
   ![Screen Shot 2021-04-15 at 6 05 47 PM](https://user-images.githubusercontent.com/69886471/114970000-27a22c80-9e3f-11eb-91ab-3b7b6daefb8b.png)!
   [Screen Shot 2021-04-15 at 6 05 56 PM](https://user-images.githubusercontent.com/69886471/114970003-2bce4a00-9e3f-11eb-8b4f-4dfac8ec72f4.png)
 
+  ### Video
   
-   
+  https://drive.google.com/file/d/1KUrAU1qBuoQclxFGmkzDG5AezAm1d6O5/view
+  
   ## Tests
   
   To run test type node index.js at console after cloning repo.
