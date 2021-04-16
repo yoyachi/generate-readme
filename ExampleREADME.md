@@ -2,7 +2,7 @@
 
   ## Description 
   
-  This project creates a simple profesional README.md file 
+  This project creates a simple profesional README.md from prompt of questions executed from terminal for user. 
   
   ## Table of Contents (Optional)
   
