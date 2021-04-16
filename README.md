@@ -24,11 +24,9 @@
   
   ## Usage 
   
-  Screenshots added:
+  
 
-  ![alt text](assets/images/Screen Shot 2021-04-15 at 6.05.47 PM.png)
-  ![alt text](assets/Screen Shot 2021-04-15 at 6.05.56 PM.png)
- 
+  
    
   ## Tests
   
