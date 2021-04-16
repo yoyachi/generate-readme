@@ -2,7 +2,7 @@
 
   ## Description 
   
-  Generate a readme for project. 
+  This project creates a simple profesional README.md file 
   
   ## Table of Contents (Optional)
   
@@ -66,9 +66,9 @@
   
   ## Tests
   
-  mpi test 
+  node index.js 
 
   ## Questions 
-  github profile:  <a href="https://github.com/yoyachi">https://github.com/yoyachi</a>
+  github profile:  <a href="https://github.com/yoyachi">https://github.com/yoyachi</a> <br>
   email: julissavidals@hotmail.com 
   
