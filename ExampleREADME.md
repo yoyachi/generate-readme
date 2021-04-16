@@ -2,7 +2,7 @@
 
   ## Description 
   
-  This project creates a simple profesional README.md from prompt of questions executed from terminal for user. 
+  This is a project that creates a simple README.md 
   
   ## Table of Contents (Optional)
   
@@ -70,5 +70,5 @@
 
   ## Questions 
   github profile:  <a href="https://github.com/yoyachi">https://github.com/yoyachi</a> <br>
-  email: julissavidals@hotmail.com 
+  email: julissa@hotmail.com 
   
